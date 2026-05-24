@@ -226,39 +226,6 @@ rf_val = GridSearchCV(rf, cv_params, cv=custom_split, refit='f1')
 - Ensemble method reduces overfitting compared to single decision tree
 - Tree-based models effectively capture non-linear relationships in service ratings
 
-### Operational Recommendations
-1. **Focus on Inflight Entertainment**: Highest impact on satisfaction
-2. **Improve Seat Comfort**: Second most important factor
-3. **Streamline Online Booking**: User experience matters significantly
-4. **Segment by Customer Type**: Different strategies for loyal vs. disloyal customers
-
-## Model Limitations
-- Data represents single airline only
-- No temporal information for trend analysis
-- Self-reported survey data may have bias
-- Delay data has 393 missing values (removed)
-
-## Future Improvements
-1. **Feature Engineering**:
-   - Create interaction terms between service categories
-   - Develop composite service quality scores
-   - Engineer delay-related features (total delay, on-time flag)
-
-2. **Advanced Modeling**:
-   - Implement XGBoost/LightGBM for comparison
-   - Test neural network architectures
-   - Apply feature selection to reduce dimensionality
-
-3. **Hyperparameter Optimization**:
-   - Expand grid search for Random Forest
-   - Implement Bayesian optimization
-   - Test different validation strategies
-
-4. **Business Applications**:
-   - Deploy best model for real-time prediction
-   - Create passenger satisfaction dashboard
-   - Segment-based satisfaction prediction
-
 ## How to Run
 
 ### Prerequisites
